@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="styles.css">
+        <script src="funcionamiento.js"></script>
+        <title>reto 1</title>
+    </head>
+
+    <body>
+        <header>
+           <img id="logoalura" src="img/Vector.png">
+        </header>
+        <div class="principal">
+            <textarea id="ingreso" class="inputs" placeholder="Ingrese texto"></textarea>
+            <div class="botones1">
+                <button id="btnencriptar" onclick="encriptar()">Encriptar</button>
+                <button id="btndesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="mostrar">
+            <textarea readonly id="salida" class="inputs" placeholder="nada para mostrar"></textarea>
+            <div class="botones2">               
+                    <button id="btncopiar" onclick="copiar()">Copiar</button>                            
+            </div>
+        </div>
+  
+
+    </body>
+
+</html>

@@ -61,12 +61,12 @@ function desencriptar() {
 
 function copiar() {
   var salida = document.getElementById("salida");
-  if (!(salida.value === "")) {
-    var imagen = document.getElementById("pantallainicio").style.display="inline-block";
-    var pantalla2 = document.getElementById("salida").style.display="none";
+  if (!(salida.value == "")) {
     alert("Copiado");
     salida.select();
     document.execCommand("copy");
+    var imagen = document.getElementById("pantallainicio").style.display="inline-block";
+    var pantalla2 = document.getElementById("salida").style.display="none";
   }
   salida.value = "";
 }

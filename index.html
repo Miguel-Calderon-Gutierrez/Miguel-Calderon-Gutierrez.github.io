@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="reset.css">
         <link rel="Stylesheet" href="styles.css">
         <script src="funcionamiento.js"></script>
         <title>reto 1</title>
@@ -11,24 +12,41 @@
 
     <body>
         <header>
-           <img id="logoalura" src="img/Vector.png">
+            <img id="logoalura" src="img/Vector.png">        
         </header>
-        <div class="principal">
-            <textarea id="ingreso" class="inputs" placeholder="Ingrese texto"></textarea>
-            <div class="botones1">
-                <button id="btnencriptar" onclick="encriptar()">Encriptar</button>
-                <button id="btndesencriptar" onclick="desencriptar()">Desencriptar</button>
+        <main>
+            <div class="principal">
+                <textarea id="ingreso" class="inputs" placeholder=
+                "            Ingrese texto
+                &#128712; solo minusculas y sin acentos
+                "></textarea>
+                <div class="botones1">
+                    <button id="btnencriptar" onclick="encriptar()">Encriptar</button>
+                    <button id="btndesencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
             </div>
-        </div>
-
-        <div class="mostrar">
-            <textarea readonly id="salida" class="inputs" placeholder="nada para mostrar"></textarea>
-            <div class="botones2">               
-                    <button id="btncopiar" onclick="copiar()">Copiar</button>                            
+    
+            <div class="mostrar">
+                <textarea readonly id="salida" class="inputs" placeholder="nada para mostrar"></textarea>
+                <div id="pantallainicio" class="inicio">
+                    <img class="muneco" src="img/Muñeco.png">
+                    <ul class="lista-info">
+                        <li><h2 class="mensaje">Ningun mensaje fue encontrado</h2></li>
+                        <li>Ingresa el texto que desees encriptar o desencriptar.</li>
+                    </ul>
+                </div>
+                <div class="botones2">
+                    <button id="btncopiar" onclick="copiar()">Copiar</button>
+                </div>
             </div>
-        </div>
-  
-
+    
+        </main>
+        <footer>
+            <ul class="derechos">
+                <li>&#169; reto creado por Miguel Calderon</li>
+                <li>2022</li>
+            </ul>
+        </footer>
     </body>
 
 </html>

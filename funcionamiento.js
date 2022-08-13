@@ -3,6 +3,8 @@ function encriptar() {
   var txtentrada = entrada.value;
 
   if (!txtentrada == "") {
+    var imagen = document.getElementById("pantallainicio").style.display="none";
+    var pantalla2 = document.getElementById("salida").style.display="inline-block";
     entrada.value = "";
     var array = txtentrada.split("");
     var nueva_cadena = "";
@@ -60,6 +62,8 @@ function desencriptar() {
 function copiar() {
   var salida = document.getElementById("salida");
   if (!(salida.value === "")) {
+    var imagen = document.getElementById("pantallainicio").style.display="inline-block";
+    var pantalla2 = document.getElementById("salida").style.display="none";
     alert("Copiado");
     salida.select();
     document.execCommand("copy");

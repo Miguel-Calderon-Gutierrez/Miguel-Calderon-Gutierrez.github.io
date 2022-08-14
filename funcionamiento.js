@@ -3,8 +3,10 @@ function encriptar() {
   var txtentrada = entrada.value;
 
   if (!txtentrada == "") {
-    var imagen = document.getElementById("pantallainicio").style.display="none";
-    var pantalla2 = document.getElementById("salida").style.display="inline-block";
+    var imagen = (document.getElementById("pantallainicio").style.display =
+      "none");
+    var pantalla2 = (document.getElementById("salida").style.display =
+      "inline-block");
     entrada.value = "";
     var array = txtentrada.split("");
     var nueva_cadena = "";
@@ -40,6 +42,10 @@ function encriptar() {
 }
 
 function desencriptar() {
+  var imagen = (document.getElementById("pantallainicio").style.display =
+    "none");
+  var pantalla2 = (document.getElementById("salida").style.display =
+    "inline-block");
   var entrada = document.getElementById("ingreso");
   var txtentrada = entrada.value;
 
@@ -65,10 +71,9 @@ function copiar() {
     alert("Copiado");
     salida.select();
     document.execCommand("copy");
-    var imagen = document.getElementById("pantallainicio").style.display="inline-block";
-    var pantalla2 = document.getElementById("salida").style.display="none";
+    var imagen = (document.getElementById("pantallainicio").style.display =
+      "inline-block");
+    var pantalla2 = (document.getElementById("salida").style.display = "none");
   }
   salida.value = "";
 }
-
-

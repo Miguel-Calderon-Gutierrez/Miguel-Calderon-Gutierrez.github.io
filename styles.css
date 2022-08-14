@@ -1,4 +1,4 @@
-html{
+html {
   background-color: #0a3871;
 }
 body {
@@ -8,11 +8,9 @@ body {
   margin-top: 8px;
   margin-left: 20px;
 }
-
-main{
+main {
   margin-bottom: 20px;
 }
-
 .principal {
   width: 70%;
   display: inline-block;
@@ -34,15 +32,12 @@ textarea {
   font-size: large;
   border-radius: 15px;
   border: 0;
-  padding-top:50px;
-  
+  padding-top: 50px;
 }
-
 #ingreso {
   background-color: #f3f5fc;
-  text-align:center;
- }
-
+  text-align: center;
+}
 #btnencriptar {
   flex-direction: row;
   width: 250px;
@@ -52,7 +47,6 @@ textarea {
   border-radius: 24px;
   border: 0;
 }
-
 #btndesencriptar {
   flex-direction: row;
   width: 250px;
@@ -62,7 +56,6 @@ textarea {
   border-radius: 24px;
   border: 1;
 }
-
 #btncopiar {
   flex-direction: row;
   width: 250px;
@@ -73,54 +66,47 @@ textarea {
   margin-bottom: 10px;
   border: 1;
 }
-
-
 #salida {
   margin-bottom: 3%;
   text-align: center;
   display: none;
 }
-#pantallainicio{
+#pantallainicio {
   text-align: center;
 }
-.inicio{
+.inicio {
   width: 100%;
   height: 435px;
 }
-
-.muneco{
-  width: 100%;  
+.muneco {
+  width: 100%;
   height: 60%;
 }
-
-.lista-info{
+.lista-info {
   text-align: center;
   margin-top: 50px;
 }
-
-.mensaje{
+.mensaje {
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
 }
-
-.botones2{
+.botones2 {
   display: flex;
   justify-content: center;
 }
-footer{
-  padding: 10px;;
+footer {
+  padding: 10px;
   background-color: #0a3871;
 }
-.derechos{
-  text-align: center; 
+.derechos {
+  text-align: center;
   background-color: #0a3871;
   padding: 30px;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
 }
-
 @media only screen and (max-width: 1000px) {
   .principal {
     width: 98%;
@@ -130,7 +116,7 @@ footer{
     margin-top: 20px;
   }
 
-  .botones1{
+  .botones1 {
     display: flex;
     justify-content: center;
   }
@@ -139,42 +125,38 @@ footer{
     margin-bottom: 8px;
     width: 45%;
   }
-  
+
   #btndesencriptar {
     margin-bottom: 8px;
     width: 48%;
   }
-  
+
   #btncopiar {
     float: left;
     width: 48%;
   }
 
-  .lista-info{
+  .lista-info {
     margin-top: 30px;
   }
-  .muneco{
+  .muneco {
     width: 50%;
     height: 350px;
   }
 }
-
-
 @media only screen and (max-width: 540px) {
-
-
   .principal {
     height: 700px;
   }
   .mostrar {
-   height: 700px;
+    height: 700px;
   }
 
-  textarea{
+  textarea {
     height: 500px;
   }
 
-  .botones1{
+  .botones1 {
     display: block;
     justify-content: center;
   }
@@ -183,20 +165,19 @@ footer{
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   #btndesencriptar {
     width: 100%;
     margin-bottom: 8px;
   }
-  
+
   #btncopiar {
     width: 100%;
     float: left;
   }
 
-  .muneco{
+  .muneco {
     width: 70%;
     height: 300px;
   }
-
 }

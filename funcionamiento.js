@@ -7,6 +7,7 @@ function encriptar() {
       "none");
     var pantalla2 = (document.getElementById("salida").style.display =
       "inline-block");
+    document.getElementById("salida").scrollIntoView();
     entrada.value = "";
     var array = txtentrada.split("");
     var nueva_cadena = "";
@@ -51,7 +52,7 @@ function desencriptar() {
 
   if (!txtentrada == "") {
     entrada.value = "";
-
+    document.getElementById("salida").scrollIntoView();
     txtentrada = txtentrada.replaceAll("ai", "a");
     txtentrada = txtentrada.replaceAll("enter", "e");
     txtentrada = txtentrada.replaceAll("imes", "i");
@@ -74,6 +75,7 @@ function copiar() {
     var imagen = (document.getElementById("pantallainicio").style.display =
       "inline-block");
     var pantalla2 = (document.getElementById("salida").style.display = "none");
+    document.getElementById("ingreso").scrollIntoView();
   }
   salida.value = "";
 }

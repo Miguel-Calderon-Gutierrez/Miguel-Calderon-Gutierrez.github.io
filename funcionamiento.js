@@ -40,7 +40,11 @@ function encriptar() {
     var salida = document.getElementById("salida");
     salida.value = nueva_cadena;
   } else {
-    alert("No se ha ingresado nada");
+    swal({
+      title: "Error",
+      text: "debe ingresar texto",
+      icon: "error",
+    });
   }
 }
 
@@ -64,7 +68,11 @@ function desencriptar() {
     var salida = document.getElementById("salida");
     salida.value = txtentrada;
   } else {
-    alert("No se ha ingresado nada");
+    swal({
+      title: "Error",
+      text: "debe ingresar texto",
+      icon: "error",
+    });
   }
 }
 

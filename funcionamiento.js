@@ -1,4 +1,5 @@
 function encriptar() {
+  //se agrego la parte de la vista
   var entrada = document.getElementById("ingreso");
   var txtentrada = entrada.value;
 

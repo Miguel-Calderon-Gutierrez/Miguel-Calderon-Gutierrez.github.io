@@ -1,0 +1,106 @@
+body {
+  background-color: #F3F5FC;
+}
+
+#titulo {
+  font-size: 30px;
+  font-weight: bold; 
+  font-family: Consolas, monaco, monospace;
+  font-size: 40px;   
+  text-align: center;
+  text-transform: uppercase;  
+  color:  #0a3871;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+  align-items: center; 
+}
+
+main img {
+  height: 350px;
+}
+
+.contenedorPalabras {
+  align-items: center;
+  margin: 18px;
+}
+
+#letra {
+  font-family: Consolas, monaco, monospace;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  display: inline-block;
+  color: #0a3871;
+}
+input{
+  display: none;
+  width: 250px;
+  height: 30px;
+  color: #0a3871;
+  background-color: rgb(255, 255, 255);
+  font-family: Consolas, monaco, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.botones {
+  width: 250px;
+  height: 35px;
+  color: #0a3871;
+  background-color: rgb(255, 255, 255);
+  font-family: Consolas, monaco, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#letrasFallidas{
+    color: #f44c43;
+    font-family: Consolas, monaco, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    text-transform: uppercase;  
+}
+
+textarea{
+  width: 40%;
+  height: 40vh;
+  text-align: center;
+  font-size: 30px;
+  font-family: Consolas, monaco, monospace;
+  resize: none;
+  margin: 10px;
+  padding-top: 30vh;
+}
+button:hover{
+    background-color: rgb(225, 225, 225);
+    transform: scale(0.9);
+}
+
+.swal-footer {
+ align-items: center;
+}
+
+@media (max-width: 800px) {
+  input {
+    display: block;
+  }
+
+  .botones{
+    margin-bottom: 10px;
+  }
+}
